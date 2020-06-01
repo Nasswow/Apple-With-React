@@ -1,5 +1,5 @@
 import React from 'react';
-
+const arcade = './images/icons/arcade.png';
 class SixthDisplay extends React.Component{
     render(){
         return  <div>
@@ -10,7 +10,7 @@ class SixthDisplay extends React.Component{
                                     <div className="left-side-container">
                                         <div className="top-logo-wrapper">
                                             <div className="logo-wrapper">
-                                                {/* <img src="images/icons/arcade.png"> */}
+                                                <img src={arcade} />
                                             </div>
                                         </div>
                                         <div className="description-wraper white">
