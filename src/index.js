@@ -6,6 +6,7 @@ import SecondDisplay from './SecondDisplay';
 import ThirdDisplay from './ThirdDisplay';
 import FourthDisplay from './FourthDisplay';
 import FifthDisplay from './FifthDisplay';
+import SixthDisplay from './SixthDisplay';
 import Footer from './Footer';
 import Copyright from './Copyright';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
     <ThirdDisplay />
     <FourthDisplay />
     <FifthDisplay />
+    <SixthDisplay />
     <Footer />
     <Copyright />
     </div>,
