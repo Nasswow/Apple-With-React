@@ -17,10 +17,10 @@ class Header extends React.Component{
                                 <div className="navbar-collapse collapse">
                                     <ul className="navbar-nav nav-justified w-100 nav-fill">
                                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">Mac</a></li>
-                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">iphone</a></li>
-                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">ipad</a></li>
-                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">watch</a></li>
-                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">tv</a></li>
+                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">iPhone</a></li>
+                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">iPad</a></li>
+                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">Watch</a></li>
+                                        <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">TV</a></li>
                                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">Music</a></li>
                                         <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#">Support</a></li>
                                         <li className="nav-item" ><a className="nav-link js-scroll-trigger" href="#"><img src={search} /></a></li>

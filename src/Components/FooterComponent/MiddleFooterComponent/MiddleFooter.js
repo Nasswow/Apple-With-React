@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Toggle from './Toggle';
 class MiddleFooter extends React.Component{
     render(){
         return(

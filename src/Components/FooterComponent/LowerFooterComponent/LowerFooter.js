@@ -1,5 +1,5 @@
 import React from 'react';
-import flag from '../../../../public/images/icons/16.png';
+import flag from './16.png';
 
 class LowerFooter extends React.Component{
     render(){
