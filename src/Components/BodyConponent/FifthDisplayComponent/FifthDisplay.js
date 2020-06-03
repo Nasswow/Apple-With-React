@@ -1,4 +1,5 @@
 import React from 'react';
+// import tvlogo from '../public/images/icons/apple-tv-logo.png';
 
 class FifthDisplay extends React.Component{
     render(){
@@ -10,7 +11,7 @@ class FifthDisplay extends React.Component{
                                     <div className="left-side-container">
                                         <div className="top-logo-wrapper">
                                             <div className="logo-wrapper">
-                                                {/* <img src="images/icons/apple-tv-logo.png"> */}
+                                                {/* <img src={tvlogo} alt = "logo" /> */}
                                             </div>
                                         </div>
 

@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
-import FirstDisplay from './FirstDisplay';
-import SecondDisplay from './SecondDisplay';
-import ThirdDisplay from './ThirdDisplay';
-import FourthDisplay from './FourthDisplay';
-import FifthDisplay from './FifthDisplay';
-import SixthDisplay from './SixthDisplay';
-import Footer from './Footer';
-import Copyright from './Copyright';
+import Header from './Components/HeaderComponent/Header';
+import FirstDisplay from './Components/BodyConponent/FirstDisplayComponent/FirstDisplay';
+import SecondDisplay from './Components/BodyConponent/SecondDisplayComponent/SecondDisplay';
+import ThirdDisplay from './Components/BodyConponent/ThirdDisplayComponent/ThirdDisplay';
+import FourthDisplay from './Components/BodyConponent/FourthDisplayComponent/FourthDisplay';
+import FifthDisplay from '././Components/BodyConponent/FifthDisplayComponent/FifthDisplay';
+import SixthDisplay from './Components/BodyConponent/SixthDisplayComponent/SixthDisplay';
+import UpperFooter from './Components/FooterComponent/UpperFooterComponent/UpperFooter';
+import MiddleFooter from './Components/FooterComponent/MiddleFooterComponent/MiddleFooter';
+import LowerFooter from './Components/FooterComponent/LowerFooterComponent/LowerFooter';
+// import Copyright from './Copyright';
 
 ReactDOM.render(
   <div>
@@ -19,8 +21,10 @@ ReactDOM.render(
     <FourthDisplay />
     <FifthDisplay />
     <SixthDisplay />
-    <Footer />
-    <Copyright />
+    <UpperFooter />
+    <MiddleFooter />
+    <LowerFooter />
+    {/* <Copyright /> */}
     </div>,
   document.getElementById('root')
 );

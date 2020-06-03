@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import './firstDisplay.css';
 class FirstDisplay extends React.Component{
     render(){
         return  <div>
