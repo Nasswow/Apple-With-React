@@ -1,6 +1,7 @@
 /* General Styling*/
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
 	background-color: #F5f5f5;
 }
 a {
@@ -245,6 +246,13 @@ img {
 	padding: 340px 0 0px;
 }
 /* Fourth section */
+.fourth-heghlight-wrapper .left-side-wrapper .left-side-container{
+	background-image:  url("./images/home/iphone11-colored.jpg"); 
+	background-color: #000;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	background-size: cover;		
+}
 .fourth-heghlight-wrapper .left-side-wrapper .left-side-container{
 	background-image:  url("./images/home/iphone11-colored.jpg"); 
 	background-color: #000;

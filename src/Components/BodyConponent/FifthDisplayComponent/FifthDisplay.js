@@ -1,51 +1,22 @@
 import React from 'react';
-// import tvlogo from '../public/images/icons/apple-tv-logo.png';
+import CommenDoubleView from '../../CommenDoubleView';
+import banker from './apple-tv-logo.png';
+import watch from './watch-series5-logo.png';
 
 class FifthDisplay extends React.Component{
     render(){
-        return <div>
+        return  (
                     <section className="fifth-heghlight-wrapper">
                         <div className="container-fluid">
                             <div className="row">
-                                <div className="left-side-wrapper col-sm-12 col-md-6">
-                                    <div className="left-side-container">
-                                        <div className="top-logo-wrapper">
-                                            <div className="logo-wrapper">
-                                                {/* <img src={tvlogo} alt = "logo" /> */}
-                                            </div>
-                                        </div>
-
-                                        <div className="tvshow-logo-wraper">
-                                            {/* <img src="images/home/banker.png"> */}
-                                        </div>
-                                        <div className="watch-more-wrapper">
-                                            <a href="#">Watch now on the Apple TV App</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="right-side-wrapper col-sm-12 col-md-6">
-                                    <div className="right-side-container">
-                                        <div className="top-logo-wrapper">
-                                            <div className="logo-wrapper">
-                                                {/* <img src="images/icons/watch-series5-logo.png"> */}
-                                            </div>
-                                        </div>
-                                        <div className="description-wraper">
-                                            With the Always-On Retina display.<br />
-                                            You’ve never seen a watch like this.
-                                        </div>
-                                        <div className="links-wrapper">
-                                            <ul>
-                                                <li><a href="">Learn more</a></li>
-                                                <li><a href="">Buy</a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>					
+                                <CommenDoubleView wrapClass = "left-side-wrapper col-sm-12 col-md-6" contClass = "left-side-container" topLogoWr = "top-logo-wrapper" bLogo = "logo-wrapper"
+                                    tvShowLogo = "tvshow-logo-wraper" watchMore = "watch-more-wrapper" tvAdd = "Watch now on the Apple TV App" bLogo = {banker} />
+                              <CommenDoubleView wrapClass = "right-side-wrapper col-sm-12 col-md-6" contClass = "right-side-container"
+                                    titleClass = "title-wraper black" proName = "With the Always-On Retina display. You’ve never seen a watch like this. " linkClass = "links-wrapper" wLogo = {watch} learnMore = "Learn more" buyNow = "Buy now" />					
                             </div>
                         </div> 
-	                </section>
-                </div>
+                    </section>
+        );
     }
 }
 export default FifthDisplay;

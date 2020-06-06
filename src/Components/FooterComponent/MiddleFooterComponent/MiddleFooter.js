@@ -1,15 +1,30 @@
-import React from 'react';
-import Toggle from './Toggle';
-class MiddleFooter extends React.Component{
-    render(){
+import React, { useState } from 'react';
+
+function MiddleFooter(){
+    const [dsply, setDisplay] = useState("");
+        function handleClick(){
+            if(window.innerWidth<=768){
+                if(dsply === "d-none"){
+                    setDisplay("d-block");
+                 }else{
+                setDisplay("d-none");
+                }
+            }else if(window.innerWidth > 768){
+                setDisplay("d-block")
+            }
+        }
+    console.log(window.innerWidth);
+        //screen size
+        //on specific h3
+
         return(
                 <div>
                     <footer className="footer-wrapper">
                         <div className="container">
                             <div className="footer-links-wrapper row"> 
                                 <div className="links-wrapper-1 col-sm-12 col-md">
-                                    <h3 className = "fLinkTitle">Shop and Learn</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} name = "first">Shop and Learn</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Mac</a></li>
                                         <li><a href="#">iPad</a></li>
                                         <li><a href="#">iPhone</a></li>
@@ -24,8 +39,8 @@ class MiddleFooter extends React.Component{
                                     </ul>
                                 </div> 
                                 <div className="links-wrapper-2 col-sm-12 col-md">
-                                    <h3 className = "fLinkTitle">Services</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >Services</h3>
+                                    <ul className = {dsply} >
                                         <li><a href="#">Apple Music</a></li>
                                         <li><a href="#">Apple News+</a></li>
                                         <li><a href="#">Apple TV+</a></li>
@@ -33,16 +48,16 @@ class MiddleFooter extends React.Component{
                                         <li><a href="#">Apple Card</a></li>
                                         <li><a href="#">iCloud</a></li>
                                     </ul>
-                                    <h3 className = "fLinkTitle">Account</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >Account</h3>
+                                    <ul className = {dsply} >
                                         <li><a href="#">Manage Your Apple ID</a></li>
                                         <li><a href="#">Apple Store Account</a></li>
                                         <li><a href="#">iCloud.com</a></li>
                                     </ul>					
                                 </div> 
                                 <div className="links-wrapper-3 col-sm-12 col-md">
-                                    <h3 className = "fLinkTitle">Apple Store</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >Apple Store</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Find a Store</a></li>
                                         <li><a href="#">Genius Bar</a></li>
                                         <li><a href="#">Today at Apple</a></li>
@@ -57,31 +72,31 @@ class MiddleFooter extends React.Component{
                                     </ul>
                                 </div>  
                                 <div className="links-wrapper-4 col-sm-12 col-md">
-                                    <h3 className = "fLinkTitle">For Business</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >For Business</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Apple and Business</a></li>
                                         <li><a href="#">Shop for Business</a></li>
                                     </ul>		
-                                    <h3 className = "fLinkTitle">For Education</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >For Education</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Apple and Education</a></li>
                                         <li><a href="#">Shop for College</a></li>
                                     </ul>
-                                    <h3 className = "fLinkTitle">For Healthcare</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >For Healthcare</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Manage Your Apple ID</a></li>
                                         <li><a href="#">Apple Store Account</a></li>
                                         <li><a href="#">iCloud.com</a></li>
                                     </ul>	
-                                    <h3 className = "fLinkTitle">For Government</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >For Government</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Apple and Education</a></li>
                                         <li><a href="#">Shop for College</a></li>
                                     </ul>
                                 </div> 
                                 <div className="links-wrapper-5 col-sm-12 col-md">
-                                    <h3 className = "fLinkTitle">Apple Values</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick}>Apple Values</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Find a Store</a></li>
                                         <li><a href="#">Genius Bar</a></li>
                                         <li><a href="#">Today at Apple</a></li>
@@ -89,8 +104,8 @@ class MiddleFooter extends React.Component{
                                         <li><a href="#">Field Trip</a></li>
                                         <li><a href="#">Apple Store App</a></li>
                                     </ul>
-                                    <h3 className = "fLinkTitle">About Apple</h3>
-                                    <ul className="fList">
+                                    <h3 onClick = {handleClick} >About Apple</h3>
+                                    <ul className = {dsply}>
                                         <li><a href="#">Find a Store</a></li>
                                         <li><a href="#">Genius Bar</a></li>
                                         <li><a href="#">Today at Apple</a></li>
@@ -107,6 +122,6 @@ class MiddleFooter extends React.Component{
                     </footer>
                 </div>
         );
-    }
+    
 }
 export  default MiddleFooter;

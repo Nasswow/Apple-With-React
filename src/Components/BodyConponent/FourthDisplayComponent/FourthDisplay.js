@@ -1,47 +1,22 @@
 import React from 'react';
+import CommenDoubleView from '../../CommenDoubleView';
+
+
 class FourthDisplay extends React.Component{
     render(){
-        return  <div>
+        return  (
                     <section className="fourth-heghlight-wrapper">
                         <div className="container-fluid">
                             <div className="row">
-                                <div className="left-side-wrapper col-sm-12 col-md-6">
-                                    <div className="left-side-container">
-                                        <div className="title-wraper">
-                                            iPhone 11 
-                                        </div> 
-                                        <div className="description-wraper">
-                                            Just the right amount of everything.
-                                        </div>
-                                        <div className="price-wrapper">
-                                            From $18.70/mo. or $499 with trade‑in.<sup>1</sup>
-                                        </div>
-
-                                        <div className="links-wrapper">
-                                            <ul>
-                                                <li><a href="">Learn more</a></li>
-                                                <li><a href="">Apply now</a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="right-side-wrapper col-sm-12 col-md-6">
-                                    <div className="right-side-container">
-                                        <div className="title-wraper white">
-                                            Get the latest CDC response to COVID-19. 
-                                        </div> 
-
-                                        <div className="links-wrapper white">
-                                            <ul>
-                                                <li><a href="">Watch the PSA</a></li>
-                                            </ul> 
-                                        </div>
-                                    </div>
-                                </div>					
+                                <CommenDoubleView wrapClass = "left-side-wrapper col-sm-12 col-md-6" contClass = "left-side-container"
+                                    titleClass = "title-wraper bold" proName = "iPhone 11 " discClass = "description-wraper" discription = "Just the right amount of everything."
+                                    priceClass = "price-wrapper" price = "From $18.70/mo. or $499 with trade‑in." linkClass = "links-wrapper" learnMore = "Learn More" buyNow = "Buy Now"/>
+                              <CommenDoubleView wrapClass = "right-side-wrapper col-sm-12 col-md-6" contClass = "right-side-container"
+                                    titleClass = "title-wraper white" proName = "Get the latest CDC response to COVID-19. " linkClass = "links-wrapper white" learnMore = "Learn More" buyNow = "Get more info"/>					
                             </div>
                         </div> 
                     </section>
-                </div>
+        );
     }
 }
 export default FourthDisplay;

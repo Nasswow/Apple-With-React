@@ -1,28 +1,13 @@
 import React from 'react';
-// import './firstDisplay.css';
+// import CommenItem from '../../CommenSindleView';
+import CommenDoubleView from '../../CommenDoubleView';
 class FirstDisplay extends React.Component{
     render(){
         return  <div>
-                    <section className="first-hightlight-wrapper">
-                        <div className="container">
-                            <div className="new-alert">
-                                New
-                            </div>
-                            <div className="title-wraper bold black">
-                                iPad Pro 
-                            </div> 
-                            <div className="links-wrapper">
-                                <ul>
-                                    <li><a href="">Learn more</a></li>
-                                    <li><a href="">Order</a></li>
-                                </ul> 
-                            </div>
-                            <div className="ipod-caption row">
-                                <div className="col-sm-12 col-md-6 text-md-right">iPad Pro available starting 3.25</div>
-                                <div className="col-sm-12 col-md-6 text-md-left">Magic Keyboard coming in May</div>
-                            </div>
-                        </div>
-                    </section>
+                    <CommenDoubleView alertClass = "new-alert" status = 'New' proName = 'iPad Pro' discription = 'Your next computer is not a computer'
+                                learnMore = 'Learn more' buyNow = 'Buy' wrapClass = "first-hightlight-wrapper"
+                                titleClass = "title-wraper bold black" linkClass = "links-wrapper"
+                                />
                 </div>
     }
 }

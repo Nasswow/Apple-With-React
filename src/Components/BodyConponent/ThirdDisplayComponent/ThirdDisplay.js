@@ -1,27 +1,16 @@
 import React from 'react';
-
+// import CommenItem from '../../CommenSindleView';
+import CommenDoubleView from '../../CommenDoubleView';
 class ThirdDisplay extends React.Component{
     render(){
         return  <div>
-                    <section className="third-hightlight-wrapper">
-                        <div className="container">
-                            <div className="title-wraper bold">
-                                iPhone 11 Pro 
-                            </div> 
-                            <div className="description-wrapper">
-                                Pro cameras. Pro display. Pro performance.
-                            </div>
-                            <div className="price-wrapper">
-                                From $24.95/mo. or $599 with trade‑in.
-                            </div>
-                            <div className="links-wrapper">
-                                <ul>
-                                    <li><a href="">Learn more</a></li>
-                                    <li><a href="">Buy</a></li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </section>
+                        <CommenDoubleView wrapClass = "third-hightlight-wrapper" titleClass = "title-wraper bold" 
+                        proName = 'iPhone 11 Pro' discClass = "description-wrapper" discription = "Pro cameras. Pro display. Pro performance."
+                                priceClass = "price-wrapper" price = "From $24.95/mo. or $599 with trade‑in." linkClass = "links-wrapper" learnMore = 'Learn more' buyNow = 'Buy' 
+                                 
+                                />
+                   
+                                
                 </div>
     }
 }

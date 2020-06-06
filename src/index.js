@@ -14,6 +14,7 @@ import LowerFooter from './Components/FooterComponent/LowerFooterComponent/Lower
 
 ReactDOM.render(
   <div>
+  
     <Header />
     <FirstDisplay />
     <SecondDisplay />
