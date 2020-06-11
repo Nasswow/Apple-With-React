@@ -1,6 +1,7 @@
 import React from 'react';
-
-
+import './Toggle';
+import './Footer.css';
+import flag from '../../images/icons/16.png';
 class Footer extends React.Component{
     render(){
         return <div>
@@ -8,7 +9,9 @@ class Footer extends React.Component{
                         <div className="container"> 
                             <div className="upper-text-container">
                                 <p>1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Additional Apple Card Monthly Installments terms are in the <a href="https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf" target="_blank"> Customer Agreement</a>. Additional iPhone Payments terms are <a href="https://www.apple.com/legal/sales-support/iphoneinstallments_us/"> here</a>.</p>
-                                <p>2. Subscription required.<br /><br />
+                                <p>2. Trade‑in values vary. Apple Watch Series 5 promotional pricing is after trade‑in of Apple Watch Series 4 in good condition. Additional trade‑in values require purchase of a new Apple Watch, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new Apple Watch. Additional terms from Apple or Apple’s trade-in partners may apply. Offer is available for a limited time only.
+                                </p>
+                                <p> Subscription required.<br /><br />
                                 Magic Keyboard sold separately.<br /><br />
                                 Apple TV+ is $4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other <a href="https://www.apple.com/promo/">terms </a> apply.</p>
                             </div>
@@ -124,7 +127,7 @@ class Footer extends React.Component{
                                 </div>
                                 <div className="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
                                     <div className="flag-wrapper">
-                                        {/* <img src="images/icons/16.png"> */}
+                                        <img src={flag} />
                                     </div> 
                                     <div className="footer-country-name">United States</div> 
                                 </div>

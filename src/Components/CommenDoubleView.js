@@ -9,12 +9,12 @@ class CommenDoubleView extends React.Component{
                         <div className={this.props.alertClass}>
                             {this.props.status}
                         </div>
-                        <div class={this.props.topLogoWr}>
-                            <div class={this.props.logoWr}>
+                        <div className={this.props.topLogoWr}>
+                            <div className={this.props.logoWr}>
                                 <img src={this.props.bLogo} />
                             </div>
                         </div>
-                        <div class={this.props.tvShowLogo}>
+                        <div className={this.props.tvShowLogo}>
                                 <img src={this.props.wLogo} />
                         </div>
                         <div className={this.props.titleClass}>
@@ -26,7 +26,7 @@ class CommenDoubleView extends React.Component{
                         <div className={this.props.priceClass}>
                             {this.props.price}
                         </div>
-                        <div class={this.props.watchMore}>
+                        <div className={this.props.watchMore}>
                             <a href="#">{this.props.tvAdd}</a>
                         </div>
                         <div className={this.props.linkClass}>

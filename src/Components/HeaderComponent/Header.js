@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './HeaderImage/logo-sm.png';
-import search from './HeaderImage/search-icon-sm.png';
-import cart from './HeaderImage/cart-sm.png';
+import logo from '../../images/icons/logo-sm.png';
+import search from '../../images/icons/search-icon-sm.png';
+import cart from '../../images/icons/cart-sm.png';
 // import './Header.css';
 
 class Header extends React.Component{

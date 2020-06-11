@@ -1,7 +1,8 @@
 import React from 'react';
 import CommenDoubleView from '../../CommenDoubleView';
-const arcade = './images/icons/arcade.png';
-const applecard = './images/icons/apple-card-logo.png';
+import applecard from '../../../images/icons/apple-card-logo.png';
+import arcade from '../../../images/icons/arcade.png';
+
 class SixthDisplay extends React.Component{
     render(){
         return  <div>
@@ -9,10 +10,11 @@ class SixthDisplay extends React.Component{
                     <section className="sixth-heghlight-wrapper">
                         <div className="container-fluid">
                             <div className="row">
-                                <CommenDoubleView wrapClass = "left-side-wrapper col-sm-12 col-md-6" contClass = "left-side-container" topLogoWr = "top-logo-wrapper" bLogo = "logo-wrapper"
-                                 linkCName = "links-wrapper" topLogoWr = "top-logo-wrapper" logoWr = "logo-wrapper" bLogo = {arcade} titleClass = "title-wraper white" proName= "Agent 8 is a small hero on a big mission."/>
+                                <CommenDoubleView wrapClass = "left-side-wrapper col-sm-12 col-md-6" contClass = "left-side-container" topLogoWr = "top-logo-wrapper"
+                                 bLogo = "logo-wrapper" linkCName = "links-wrapper" topLogoWr = "top-logo-wrapper" logoWr = "logo-wrapper" bLogo = {arcade} 
+                                 titleClass = "title-wraper white" proName= "Agent 8 is a small hero on a big mission." tvShowLogo = "d-none"/>
                                 <CommenDoubleView wrapClass = "right-side-wrapper col-sm-12 col-md-6" contClass = "right-side-container"
-                                 titleClass = "title-wraper" proName = "Apple Card Monthly Installments"
+                                 titleClass = "title-wraper" proName = "Apple Card Monthly Installments"  tvShowLogo = "d-none"
                                      linkClass = "links-wrapper" learnMore = "Learn More" buyNow = "Apply now" topLogoWr = "top-logo-wrapper" logoWr = "logo-wrapper" bLogo = {applecard}/>					
                             </div>
                         </div> 

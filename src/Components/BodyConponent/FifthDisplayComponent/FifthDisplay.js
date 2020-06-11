@@ -10,9 +10,10 @@ class FifthDisplay extends React.Component{
                         <div className="container-fluid">
                             <div className="row">
                                 <CommenDoubleView wrapClass = "left-side-wrapper col-sm-12 col-md-6" contClass = "left-side-container" topLogoWr = "top-logo-wrapper" bLogo = "logo-wrapper"
-                                    tvShowLogo = "tvshow-logo-wraper" watchMore = "watch-more-wrapper" tvAdd = "Watch now on the Apple TV App" bLogo = {banker} />
+                                    tvShowLogo = "tvshow-logo-wraper" watchMore = "watch-more-wrapper" tvAdd = "Watch now on the Apple TV App" bLogo = {banker} linkClass = "links-wrapper d-none" />
                               <CommenDoubleView wrapClass = "right-side-wrapper col-sm-12 col-md-6" contClass = "right-side-container"
-                                    titleClass = "title-wraper black" proName = "With the Always-On Retina display. You’ve never seen a watch like this. " linkClass = "links-wrapper" wLogo = {watch} learnMore = "Learn more" buyNow = "Buy now" />					
+                                    titleClass = "title-wraper black" proName = "With the Always-On Retina display. You’ve never seen a watch like this. " linkClass = "links-wrapper" wLogo = {watch} 
+                                    learnMore = "Learn more" buyNow = "Buy now" topLogoWr = "top-logo-wrapper" logoWr = "d-none" />					
                             </div>
                         </div> 
                     </section>
