@@ -1,8 +1,10 @@
 import React from 'react';
 import './Toggle';
-import './Footer.css';
+import '../../CSS/footer.css';
 import flag from '../../images/icons/16.png';
+
 class Footer extends React.Component{
+
     render(){
         return <div>
                     <footer className="footer-wrapper">
