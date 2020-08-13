@@ -1,57 +1,68 @@
-import React from 'react';
+import React from "react";
 // import CommenDoubleView from '../../CommenDoubleView';
-import applecard from '../../../images/icons/apple-card-logo.png';
-import arcade from '../../../images/icons/arcade.png';
+import applecard from "../../../images/icons/apple-card-logo.png";
+import arcade from "../../../images/icons/arcade.png";
 
-class SixthDisplay extends React.Component{
-    render(){
-        return (
-            <section class="sixth-heghlight-wrapper">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="left-side-wrapper col-sm-12 col-md-6">
-                                <div class="left-side-container">
-                                    <div class="top-logo-wrapper">
-                                        <div class="logo-wrapper">
-                                            <img src={arcade} />
-                                        </div>
-                                    </div>
-                                    <div class="description-wraper white">
-                                        Agent 8 is a small hero on a big mission.
-                                    </div>
-                                    <div class="links-wrapper">
-                                        <ul>
-                                            <li><a href="">Play now<sup>2</sup></a></li>
-                                            <li><a href="">Learn more</a></li>
-                                        </ul> 
-                                    </div>						
-                                </div>
-                            </div>
-                            <div class="right-side-wrapper col-sm-12 col-md-6">
-                                <div class="right-side-container">
-                                    <div class="top-logo-wrapper">
-                                        <div class="logo-wrapper">
-                                            <img src={applecard} />
-                                        </div>
-                                    </div>
-                                    <div class="title-wraper">
-                                        Apple Card Monthly Installments 
-                                    </div> 
-                                    <div class="description-wraper">
-                                        Pay for your next iPhone over time, interest-free with Apple Card.
-                                    </div>
-                                    <div class="links-wrapper">
-                                        <ul>
-                                            <li><a href="">Learn more</a></li>
-                                            <li><a href="">Apply now</a></li>
-                                        </ul> 
-                                    </div>
-                                </div>
-                            </div>					
-                        </div>
-                    </div> 
-                </section>
-        );
-    }
+class SixthDisplay extends React.Component {
+  render() {
+    return (
+      <section className="sixth-heghlight-wrapper">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="left-side-wrapper col-sm-12 col-md-6">
+              <div className="left-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
+                    <img src={arcade} />
+                  </div>
+                </div>
+                <div className="description-wraper white">
+                  Agent 8 is a small hero on a big mission.
+                </div>
+                <div className="links-wrapper">
+                  <ul>
+                    <li>
+                      <a href="">
+                        Play now<sup>2</sup>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">Learn more</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="right-side-wrapper col-sm-12 col-md-6">
+              <div className="right-side-container">
+                <div className="top-logo-wrapper">
+                  <div className="logo-wrapper">
+                    <img src={applecard} />
+                  </div>
+                </div>
+                <div className="title-wraper">
+                  Apple Card Monthly Installments
+                </div>
+                <div className="description-wraper">
+                  Pay for your next iPhone over time, interest-free with Apple
+                  Card.
+                </div>
+                <div className="links-wrapper">
+                  <ul>
+                    <li>
+                      <a href="">Learn more</a>
+                    </li>
+                    <li>
+                      <a href="">Apply now</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 }
 export default SixthDisplay;
