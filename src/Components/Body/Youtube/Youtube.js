@@ -1,7 +1,6 @@
 import React, { Component } from "react";
+import("dotenv").config();
 // import './youtube.css';
-
-//https://www.googleapis.com/youtube/v3/search?key=AIzaSyCkFpOgF-rTilwwQ0S0ihbEV2aQl1SJ39U&part=snippet,id&order=date&maxResults=2
 
 class Youtube extends Component {
   constructor() {
@@ -11,8 +10,9 @@ class Youtube extends Component {
     };
   }
   //   componentDidMount() {
+  //   const api = process.env.API;
   //     fetch(
-  //       "https://www.googleapis.com/youtube/v3/search?key=AIzaSyA6FU8ZC6dQcdlZoH80hNfi8ZvYMEfAbJY&part=snippet,id&order=date&maxResults=12"
+  //       "api"
   //     )
   //       .then((response) => response.json())
   //       .then((data) => {
@@ -25,14 +25,15 @@ class Youtube extends Component {
   //       });
   //   }
   render() {
+    console.log(this.state.youTubeVideos);
     return (
       <div className="allVideosWrapper">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-12">
               <div className="title-wraper">
-                Latest Videos <br />
-                <br />
+                {/* Latest Videos <br />
+                <br /> */}
               </div>
             </div>
             {this.state.youTubeVideos.map((singleVideo, i) => {
